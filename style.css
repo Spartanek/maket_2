@@ -1,0 +1,185 @@
+:root {
+  /* colors */
+  ---text-color-white:#FFF;
+  ---text-grey: #252B42 ;
+  ---text-hover:#FA4A0C;
+  ---black-color:#000000;
+  ---text-color-kinda-white:#F6F6F6;
+  ---text-color-grey:#737373;
+  /* fonts */
+  --font-nav: 'Montserrat', sans-serif;
+  --font-weight-nav: 600;
+  --font-copyright:'Roboto', sans-serif;
+  --font-weight-copyright: 700;
+  --font-button-or-header:'Montserrat', sans-serif;
+  --font-weight-button-or-header: 700;
+  --font-main-text:'Montserrat', sans-serif;
+  --font-weight-main-text: 500;
+  --font-header-h:'Poppins', sans-serif;
+  --font-weight-header-h: 700;
+  --font-header-section-guide:'Poppins', sans-serif;
+  --font-weight-header-section-guide:600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+.nav-li {
+  color:var(---text-grey);
+  text-align: center;
+/* Link */
+  font-family: var(--font-nav);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-nav);
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+.nav-li:not(:last-child){
+  margin-right:114px; 
+}
+.nav-li:hover{
+  color:var(---text-hover);
+}
+
+.nav-ul{
+  display:flex;
+  align-items: center;
+}
+.header{
+  display:flex;
+}
+.flexdiv{
+  display:flex;
+  align-items:center ;
+}
+.container{
+  max-width:1440px;
+  padding-right:90px;
+  padding-left:90px;
+  margin:0 auto;
+}
+.logo{
+  width: 150px;
+  height: 65.214px;
+  flex-shrink: 0;
+  margin-right:465px;
+  display:block;
+}
+.header{
+  padding-top:49.52px;
+  padding-bottom:41.27px;
+  height: 156px;
+  align-self: stretch;  
+}
+.hero-section{
+  background-color: green;
+  padding-top: 80px;
+  height:619px;
+  
+  /* padding-bottom:162px; */
+  /* якщо прибрати ще в hero-button margin, тоді не спрацює паддінг */
+}
+.hero-p1{
+  color: var(---text-color-kinda-white);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  font-family: var(--font-button-or-header);
+  font-weight: var(--font-weight-button-or-header);
+  margin-bottom:10px;
+}
+.hero-h2{
+  width: 799px;
+  height: 151.111px;
+  color: #FFF;
+  text-align: center;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  font-family: var(--font-header-h);
+  font-weight: (--font-weight-header-h);
+  margin-bottom:14.89px;
+}
+.hero-p2{
+  margin: 0 auto;
+  width: 368px;
+  height: 19px;
+  color: #F6F6F6;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  font-family: var(--font-main-text);
+  font-weight: var(--font-weight-main-text);
+  margin-bottom:78px;
+}
+.button-flex{
+  display:flex;
+  justify-content: center;
+}
+.hero-button{
+  display: flex;
+  width: 236px;
+  padding: 16px 0px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  /* обговорити */
+  background-color:transparent;
+  margin-bottom:162px;
+}
+.hero-button:not(:last-child){
+  margin-right:30px;
+}
+.hero-button:hover{
+  background: #FA4A0C;
+}
+.hero-button-text{
+  color: var(---text-color-white);
+/* H3 */
+  font-family: var(--font-button-or-header);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: var(--font-weight-button-or-header);
+  line-height: 36px;
+  letter-spacing: 0.1px;
+}
+.container-hero{
+  margin: 0 auto;
+  max-width: 800px;
+}
+.guide-section{
+  height: 2979px;
+  background:var(---text-color-white);
+  padding-top: 56px;
+  padding-bottom:190.78px;
+}
+.guide-header{
+  color: var(---black-color);
+  font-family: var(--font-header-section-guide);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: var(--font-weight-header-section-guide);
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  opacity: 0.800000011920929;
+  text-align: center;
+}
+
