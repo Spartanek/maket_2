@@ -70,6 +70,13 @@ ol {
   padding-left:90px;
   margin:0 auto;
 }
+/* питання про padding-right і left */
+.container2{
+  max-width:1440px;
+  padding-right:168px;
+  padding-left:174px;
+  margin:0 auto;
+}
 
 
 
@@ -171,9 +178,9 @@ ol {
   max-width: 800px;
 }
 .guide-section{
-  height: 2979px;
   background:var(---text-color-white);
   padding-top: 56px;
+
   padding-bottom:190.78px;
 }
 .guide-header{
@@ -189,23 +196,27 @@ ol {
   margin-bottom:70px;
 }
 .guide-section-li1{
+  flex-direction:row-reverse;
+  justify-content:flex-end;
   display:flex;
-  flex-direction:row;
+  margin-bottom:108.3px;
 }
 .guide-section-li2{
   display:flex;
-  flex-direction:row-reverse;
-  justify-content:flex-end;
+  flex-direction:row;
 }
 .guide-section-p1{
   color: var(---text-hover);
 /* H3 */
   font-family: var(--font-weight-button-or-header);
+  /* чогось не працює шрифт, коли дав його в зміну, але коли пишу вручну, то все працює */
+  font-family:'Montserrat'; 
   font-size: 24px;
   font-style: normal;
   font-weight: var(--font-weight-button-or-header);
   line-height: 36px;
   letter-spacing: 0.1px;
+  margin-bottom:17px;
 }
 .guide-section-h2{
   color: var(---text);
@@ -213,9 +224,10 @@ ol {
   font-family: var(--font-button-or-header);
   font-size: 40px;
   font-style: normal;
-  font-weight: var(--font-weight-button-or-header)
+  font-weight: var(--font-weight-button-or-header);
   line-height: 57px;
   letter-spacing: 0.2px;
+  margin-bottom:27px;
 }
 .guide-section-p2{
   color: var(---second-text);
@@ -227,21 +239,37 @@ ol {
   line-height: 38px;
   letter-spacing: 0.2px;
 }
-.img{
+.img1{
   width: 250px;
   height: 506.972px;
   border-radius: 40px;
+  background: url(<path-to-image>), lightgray -15.936px -10.956px / 113.944% 110.413% no-repeat;
+  margin-right:287px;
+  
 }
-.content-box1{}
-.content-box2{}
 
-.section-platform{
-  padding-top:146.9px;
-  padding-bottom:133.1px;
-  height: 516px;
-  background-color:var(---second-text);
-  background: linear-gradient(0deg, rgba(37, 43, 66, 0.40) 0%, rgba(37, 43, 66, 0.40) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+.img2{
+  width: 250px;
+  height: 489.224px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: url(<path-to-image>), lightgray -17.241px -21.552px / 114.224% 108.37% no-repeat;
+  margin-left:338px;
 }
+.content-box1{
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+  
+
+}
+.content-box2{
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+}
+
+
 .second-hero-button{
   background:transparent;
   padding: 18px 31px;
