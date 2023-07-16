@@ -94,11 +94,10 @@ ol {
 .hero-section {
   background-color: green;
   padding-top: 80px;
-  padding-bottom: 169px;
   /* якщо прибрати height, то вміст стане величезним (займатиме всю сторінку)*/
 
-  /* height: 619px; */
-
+  height: 619px;
+  padding-bottom: 162px;
   /* якщо прибрати ще в hero-button margin, тоді не спрацює паддінг */
 }
 .hero-p1 {
@@ -152,7 +151,7 @@ ol {
   border: 1px solid var(---text-color-white);
   /* обговорити */
   background-color: transparent;
-  /* margin-bottom:162px;  */
+  margin-bottom: 162px;
 }
 .hero-button:not(:last-child) {
   margin-right: 30px;
@@ -174,13 +173,7 @@ ol {
   margin: 0 auto;
   max-width: 800px;
 }
-.guide-section {
-  background: var(---text-color-white);
-  /* дуже криво працює */
-  padding-top: 56px;
 
-  padding-bottom: 190.78px;
-}
 .guide-header {
   color: var(---black-color);
   font-family: var(--font-header-section-guide);
@@ -264,6 +257,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 184.8px;
 }
 
 .second-hero-button {
@@ -341,11 +335,8 @@ ol {
 .platform-button:not(:last-child) {
   margin-right: 30px;
 }
-.footer-section {
+.footer {
   display: flex;
-  width: 1440px;
-  padding-top: 148px;
-  justify-content: flex-end;
   align-items: center;
-  gap: 78px;
+  flex-direction: row;
 }
