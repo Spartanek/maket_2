@@ -22,9 +22,9 @@ a {
   align-self: stretch;
 }
 .container {
-  max-width: 1440px;
-  padding-right: 175px;
-  padding-left: 90px;
+  max-width: 2640px;
+  padding-right: 360px;
+  padding-left: 360px;
   margin: 0 auto;
 }
 .container-for-footer {
